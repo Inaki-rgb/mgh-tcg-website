@@ -1,0 +1,459 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-color: #FF6D11;
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    background-color: #F4EAC2;
+}
+.barraNav {
+    background-color: #F4EAC2;
+}
+
+.gameStore a{
+    text-decoration: none;
+    font-size: 40px;
+}
+@media only screen and (max-width:768px) {
+    .logo a{
+        font-size: small;
+    }
+    .listMenuDos a{
+        font-size: small;
+    }
+    .warHammerTxt p{
+        font-size: small;
+    }
+    .dmuTxt p{
+        font-size: small;
+    }
+    .redesSociales img{
+        width: 50%;
+        align-content: center;
+    }
+    .descPie p{
+        display: none;
+    }
+    .displayItems img{
+        width: 50%;
+    }
+}
+
+.nav{
+    background-color: #FF6D11;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    justify-content: end;
+}
+
+
+.gameStore a:hover,
+.gameStore a:focus{
+    color: #DBDBDB;
+}
+
+.navSecundario{
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+}
+
+.navSecundario li{
+    margin-left: 1em;
+    justify-items: end;
+}
+
+.navSecundario a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+    font-size: 30px;
+}
+.navSecundario a:hover,
+.navSecundario a:focus{
+    color: #DBDBDB;
+}
+
+.navPrimario {
+    display: flex;
+    background-color: #F4EAC2;
+
+}
+.navPrimario li{
+    text-decoration: none;
+}
+.navPrimario a{
+    text-decoration: none;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    background-color: #DBDBDB;
+}
+.banner img{
+    width: 40%;
+}
+
+.carousel{
+    padding: 25px;
+    background-color: #DBDBDB;
+}
+
+.carousel-item img{
+    margin: auto;
+}
+
+.carousel-caption h5{
+    color: white;
+}
+
+.carousel-caption p{
+    color:white;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF6D11' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF6D11' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.noticias {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "warHammerPic dmuPic"
+        "warHammerPic dmuPic"
+        "warHammerTxt dmuTxt"
+        "warHammerTxt dmuTxt";
+    background-color: #DBDBDB;
+    justify-items: center; 
+    align-items: center; 
+}
+.warHammerPic { 
+    grid-area: warHammerPic;
+    display: grid;    
+}
+
+.pic40K{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-right: 2em;
+}
+
+.dmuPic { 
+    grid-area: dmuPic;
+}
+.picDMU{
+    width: 60%;
+    margin-left: 2em;
+}
+
+.warHammerTxt { 
+    grid-area: warHammerTxt;
+    font-size: 25px;
+}
+
+.dmuTxt { 
+    grid-area: dmuTxt; 
+    font-size: 25px;
+}
+
+.piePagina{
+    background-color: #FF6D11;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "descFooter1 descFooter2 descFooter3 redSocLogos redSocLogos redSocLogos";
+}
+
+.descFooter1 { 
+    grid-area: descFooter1;
+    margin-left: 2em; 
+}
+
+.descFooter2 { 
+    grid-area: descFooter2; 
+    margin-left: 2em; 
+}
+
+.descFooter3 { 
+    grid-area: descFooter3; 
+    margin-left: 2em; 
+}
+
+.redSocLogos { 
+    grid-area: redSocLogos; 
+}
+.redesSociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.redesSociales img{
+    margin-left: 5em;
+}
+
+
+.filtroSealed{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 25px;
+}
+.sellado1{
+    display: flex;
+    justify-content: center;
+}
+
+.sellado2{
+    display: flex;
+    justify-content: center;
+}
+
+.sellado3{
+    display: flex;
+    justify-content: center;
+}
+
+.sellado4{
+    display: flex;
+    justify-content: center;
+}
+
+.agregarCarrito{
+    display: flex;
+    margin: 0 0 0 5px;
+    border: 5px solid #FF6D11;
+    width: 100%;
+    height: 100%;
+
+}
+
+.prodSingle {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+    "filterBox filterBox"
+    "itemDisplay1 itemDescrip1"
+    "itemDisplay2 itemDescrip2"
+    "itemDisplay3 itemDescrip3"
+    "itemDisplay4 itemDescrip4";
+    background-color: #DBDBDB;
+}
+
+.filterBox { 
+    grid-area: filterBox; 
+
+}
+.filterBox input{
+    width: 20px;
+
+    position: relative;
+    left: 200px;
+
+    vertical-align: middle;
+}
+.filterBox label{
+    width: 200px;
+
+    position: relative;
+    left: -20px;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.itemDisplay1 { 
+    grid-area: itemDisplay1; 
+}
+
+.itemDisplay2 { 
+    grid-area: itemDisplay2; 
+}
+
+.itemDisplay3 { 
+    grid-area: itemDisplay3; 
+}
+
+.itemDisplay4 { 
+    grid-area: itemDisplay4; 
+}
+
+.itemDescrip1 { 
+    grid-area: itemDescrip1; 
+}
+
+.itemDescrip2 { 
+    grid-area: itemDescrip2; 
+}
+
+.itemDescrip3 { 
+    grid-area: itemDescrip3; 
+}
+
+.itemDescrip4 { 
+    grid-area: itemDescrip4; 
+}
+
+.prodSellado {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+        "filterBox filterBox"
+        "itemDisplay1 itemDescrip1"
+        "itemDisplay2 itemDescrip2"
+        "itemDisplay3 itemDescrip3"
+        "itemDisplay4 itemDescrip4";
+    background-color: #DBDBDB;
+}
+
+.filterBox { grid-area: filterBox; }
+
+.itemDisplay1 { grid-area: itemDisplay1; }
+
+.itemDisplay2 { grid-area: itemDisplay2; }
+
+.itemDisplay3 { grid-area: itemDisplay3; }
+
+.itemDisplay4 { grid-area: itemDisplay4; }
+
+.itemDescrip1 { grid-area: itemDescrip1; }
+
+.itemDescrip2 { grid-area: itemDescrip2; }
+
+.itemDescrip3 { grid-area: itemDescrip3; }
+
+.itemDescrip4 { grid-area: itemDescrip4; }
+
+.filtroSingle{
+    background-color: rgb(255, 255, 255);
+}
+
+.single1{
+    display: flex;
+    margin: 0 0 5px 0;
+}
+.single2{
+    display: flex;
+    margin: 5px 0 5px 0;
+}
+.single3{
+    display: flex;
+    margin: 5px 0 5px 0;
+}
+.single4{
+    display: flex;
+    margin: 5px 0 5px 0;
+}
+
+.shoppingCart {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "displayItems displayItems displayItems totalPurchase"
+        "displayItems displayItems displayItems totalPurchase"
+        "displayItems displayItems displayItems checkOut"
+        "descItem descItem descItem checkOut";
+    background-color: #DBDBDB;
+}
+
+.displayItems {
+    justify-self: start;
+    align-content: center;
+    grid-area: displayItems;
+}
+
+.descItem { 
+    justify-self: start;
+    grid-area: descItem; 
+}
+
+.checkOut { 
+    grid-area: checkOut; 
+}
+
+.totalPurchase { 
+    grid-area: totalPurchase; 
+}
+
+
+.cuentaPersonal{
+    display: flex;
+    flex-direction: row;
+}
+.perfil{
+    margin: 0 5px 0 5px;
+}
+.direccion{
+    margin: 0 5px 0 5px;
+}
+.wishlist{
+    margin: 0 5px 0 5px;
+}
+.historialDeCompras{
+    margin: 0 5px 0 5px;
+}
+
+.fondoPerfil{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.email{
+    margin: 5px 0 5px 0;
+}
+.miembro{
+    margin: 5px 0 5px 0;
+}
+.storeCredit{
+    margin: 5px 0 50px 0;
+}
+.cupon{
+    width: 300px;
+    border: 5px solid #FF6D11;
+    text-align: center;
+}
+.cupon a{
+    text-decoration: none;
+}
+body{
+    background-color:#DBDBDB;
+}
